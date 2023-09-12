@@ -1,0 +1,153 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.162);
+    background-color: #1e1e1e9b;
+    z-index: 10;
+
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+}
+
+.navbar i {
+    padding: 0 10px;
+    font-size: 20px;
+    transition: all .2s ease-in-out; 
+}
+
+.navbar i:hover {
+    color: #FDD36A;
+    transform: scale(1.2);
+}
+
+
+.navbar .logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #FDD36A;
+    animation: Color 4s linear infinite;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.05   ));
+    user-select: none;
+}
+ 
+.navbar .nav-links ul{
+    display: flex; 
+}
+
+.navbar .nav-links ul li{
+    margin: 0 35px;
+}
+
+.navbar .bars {
+    display: none;
+}
+
+.navbar .bars {
+    top: 50px;
+    right: 50px;
+    width: 35px;
+    position: absolute;
+    display: none;
+}
+
+.navbar h5 {
+    margin-left: -500px;
+}
+
+@media screen and (max-width:1400px) {
+    .navbar h5 {
+        margin-left: 0;
+    }
+}
+
+@keyframes Color{
+    0%{
+      color:#FDD36A;
+    }
+    
+    40%{
+      color:#fff4d8;
+    }
+    
+    60%{
+      color:#FDD36A;
+    }
+    
+    80%{
+      color:#fff4d8;
+    }
+
+    100%{
+        color:#FDD36A;
+      }
+}
+
+
+
+
+
+@media screen and (max-width:850px) {
+
+
+
+        .navbar i {
+            padding-right: 20px;
+            
+        }
+
+        .navbar {
+            padding: 0;
+        }
+
+        .navbar .logo{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+
+        .nav-links.mobile-menu {
+            margin-left: 0;
+        }
+
+        .nav-links {
+            top: 0;
+            left: 0;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.20);
+            backdrop-filter: blur(10px);
+            z-index: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: -100%;
+            transition: all 0.5s ease;
+        }
+        .navbar .bars {
+            display: block;
+        }
+
+        .nav-links ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .navbar .nav-links ul li {
+            margin: 25px 0;
+            font-size: 1.2em;
+        }
+
+        .tag {
+            margin-right: 0;
+        }
+}

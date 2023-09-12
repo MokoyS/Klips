@@ -1,0 +1,28 @@
+@import url(header.css);
+@import url(button.css);
+@import url(main.css);
+@import url(aside.css);
+@import url(popup.css);
+@import url(footer.css);
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url(post.css);
+@import url(profil.css);
+body {
+    
+    font-family: 'Lexend', sans-serif;
+    background-image: linear-gradient(to right top, #000000, #291b1b, #4b3027, #694a2f, #7e6a38);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}

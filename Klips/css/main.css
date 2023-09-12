@@ -1,0 +1,21 @@
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.line {
+    background-color: white;
+    height: 1px;
+    width: 1px;
+    margin: 0;
+}
+
+.container {
+    padding:0 40px ;
+    margin: 0;
+}
+
+

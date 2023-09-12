@@ -1,0 +1,275 @@
+.popup {
+    position: absolute;
+    z-index: 10;
+    height: 600px;
+    width: 600px;
+    top: -20%;
+    background-color: rgb(18, 18, 18);
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column  ;   
+    box-shadow: rgba(138, 138, 143, 0.15) 0px 48px 100px 0px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    position: fixed;
+}
+
+
+.klipez:active {
+    box-shadow: 0px 8px 15px rgba(255, 255, 255, 0.2);
+    border-radius: 35px;
+}
+
+
+
+
+.popupsup.open-popup {
+    opacity: 1;
+    top: 40%;
+    left: 50%;
+    z-index: 10;
+}
+
+.open-popup {
+    opacity: 1;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);  
+}
+
+
+
+.tagsize {
+    margin: 30px!important;
+}
+
+
+.wip i {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.wip {
+    background-color: rgb(18, 18, 18);
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 540px;
+    
+}
+
+.tag {
+    display: flex;
+    
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+    
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    
+}
+
+.nav a {
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+}
+.nav li {
+    padding: 20px;
+}
+
+.attach {
+    color: white;
+    
+}
+
+.popup i {
+    font-size: 25px;
+    background-color: rgb(18, 18, 18);
+      
+}
+
+
+.popup-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+
+.popup input[type=text] {
+
+    text-decoration: none;
+    padding: 80px 40px;
+    border:0;
+    background-color:rgb(18, 18, 18);
+    color: white;
+    font-size: 30px;
+    outline: none;
+    
+}
+
+.popup input[type=text]::selection {
+
+    color: rgb(0, 0, 0);
+    background-color:#FDD36A;
+    
+}
+
+
+.popup textarea {
+    text-decoration: none;
+    padding: 80px 40px;
+    border:0;
+    background-color:rgb(18, 18, 18);
+    color: white;
+    font-size: 30px;
+    outline: none;
+}
+
+.popup textarea[type=text]::selection {
+
+    color: rgb(0, 0, 0);
+    background-color:#FDD36A;
+    
+}
+
+
+.popup .klipez {
+
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 14px 24px;
+    margin-left: 50px;
+    border: none;
+    background: linear-gradient(to right, #FDD36A 0%, #fdd672 50%, #fdd97f 100%);
+    color: rgb(0, 0, 0);
+    font-family: 'Lexend', sans-serif;
+
+    
+
+}
+
+.popup .klipez:hover{
+    background: linear-gradient(to right, #ffb700 0%, #fdd672 50%, #fac02e 100%);    
+}
+
+.line {
+    height: 1px;
+    width: 480px; 
+    background: rgb(255, 255, 255);
+    margin: 20px 60px;
+ 
+    
+}
+
+@media screen and (max-width:700px) {
+    .popup {
+        width: 578px;
+    }
+}
+
+
+@media screen and (max-width:650px) {
+    .popup {
+        width: 298px;
+        height: 700px;
+    }
+
+    .line {
+        width: 186px; 
+    }
+
+    .wip {
+        padding: 0;
+        padding: 0 149px;
+        margin-left: 0px;
+    }
+    
+    .popup input[type="text"] {
+        width: 215px;
+    }
+}
+
+input[type="file"] {
+    display: none
+}
+
+.file {
+    background-color: rgb(18, 18, 18);
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.file i{
+    color: white;
+    background-color: rgb(18, 18, 18);
+}
+
+
+.popupsup {
+    z-index: -1;
+    opacity: 0;
+    position: fixed;
+    background-color: rgb(23, 23, 23);
+    padding: 100px;
+    box-shadow: rgb(69, 69, 69) 0px 20px 30px -10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.popupsup h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+@media screen and (max-width:850px) {
+    .popupsup h1 {
+        font-size: 20px;
+    }
+}
+
+.supbottom {
+    display: flex;
+    gap: 30px;
+    margin: auto;
+    margin-top:20px ;
+}
+
+.popupsup button {
+    background-color:rgb(23, 23, 23) ;
+    border: none;
+    color: red;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.popupsup a {
+    border: 1px  solid green;
+    padding: 10px;
+    color: green;
+    
+}
+
